@@ -1,0 +1,628 @@
+body {
+        background-color: black;
+}
+
+.center {
+        text-align: center;
+        color: black;
+}
+
+.title {
+        margin-top: 10px;
+}
+
+.subtitle {
+        color: black;
+}
+
+.titleSmaller {
+        font-size: 29px;
+        color: black;
+        font-weight: 600;
+        margin: 6px 0px;
+}
+
+.navbar-item a,
+.navbar-item {
+        color: orange !important;
+}
+
+.is-black {
+        background-color: rgb(58, 47, 39) !important;
+}
+
+.navbar-item:hover {
+        background-color: rgb(90, 63, 43) !important;
+}
+
+.navbar-dropdown {}
+
+.aboutTitle {
+        margin-top: 10px;
+        margin-bottom: 18px;
+}
+
+.panel {
+        padding: 18px 18px;
+        background-color: white;
+        display: none;
+        overflow: hidden;
+        font-size: 16px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.acText {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 26px;
+}
+
+.accordion {
+        background-color: rgb(30, 28, 28);
+        color: white;
+        cursor: pointer;
+        padding: 18px 18px;
+        width: 100%;
+        height: 16%;
+        text-align: left;
+        border: none;
+        outline: none;
+        font-size: 19px;
+        transition: background 0.4s ease-out;
+}
+
+.active,
+.faq:hover {
+        background-color: #777676;
+}
+
+.text3d {
+        /* top: 50%;
+        right: 50%; */
+        text-transform: uppercase;
+        font-family: verdana;
+        font-size: 50px;
+        font-weight: 700;
+        color: black;
+        text-shadow: 1px 1px 1px #919191,
+                1px 2px 1px #919191,
+                1px 3px 1px #919191,
+                1px 4px 1px #919191,
+                1px 5px 1px #919191,
+                1px 6px 1px #919191,
+                1px 7px 1px #919191,
+                1px 8px 1px #919191,
+                1px 9px 1px #919191,
+                1px 10px 1px #919191,
+                1px 18px 6px rgba(217, 160, 54, 0.4),
+                1px 22px 10px rgba(217, 160, 54, 0.2),
+                1px 25px 35px rgba(217, 160, 54, 0.2),
+                1px 30px 60px rgba(217, 160, 54, 0.4), 0 0 3px #FF0000;
+}
+
+.contactForm {
+        width: 80%;
+}
+
+xerTxt {
+        color: white;
+        font-size: 17px;
+        margin: 10px 10px;
+}
+
+
+.storeColor {
+        background-color: rgb(217, 160, 54);
+}
+
+.titleOrange {
+        color: rgb(255, 166, 0);
+        font-size: 40px;
+        font-weight: bold;
+}
+
+.footer {
+        background-color: #17110f;
+        color: rgb(241, 136, 44);
+}
+
+.footerTxt:hover {
+        color: rgb(24, 24, 149);
+}
+
+.refButton {
+        display: none;
+
+}
+
+.reflow-add-to-cart {
+        display: none;
+
+}
+
+.map {
+        margin: 0px 10px;
+}
+
+.orange {
+        background-color: rgb(220, 155, 36);
+}
+
+.black {
+        background-color: black;
+}
+
+.product {
+        border: 1px solid white;
+        margin: 10px 0px;
+        padding: 0;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+}
+
+.product:hover {
+        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+}
+
+#bgrnd {
+        position: relative;
+        background-image: url("../images/hero.jpg");
+        min-height: 700px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-size: 20px;
+}
+
+* {
+        box-sizing: border-box
+}
+
+.slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+}
+
+.mySlides {
+        display: none;
+}
+
+.prev,
+.next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+}
+
+.next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+}
+
+.numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+        background-color: #717171;
+}
+
+.fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+}
+
+@keyframes fade {
+        from {
+                opacity: .4
+        }
+
+        to {
+                opacity: 1
+        }
+}
+
+.card {
+        margin: 10px 10px;
+}
+
+#contact {
+        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+        border: solid 2px rgb(220, 155, 36);
+}
+
+.a {
+        color: black;
+}
+
+.aboutAnim {
+        animation-name: aboutAnim;
+        animation-duration: 4s;
+        animation-iteration-count: 3;
+}
+
+.testimonialAnim {
+        animation-name: reviewAnim;
+        animation-duration: 5s;
+        animation-iteration-count: 5;
+}
+
+.is-5 {
+        color: rgb(241, 136, 44);
+}
+
+.a {
+        color: rgb(186, 123, 68);
+}
+
+.is-7 {
+        color: rgb(241, 136, 44);
+}
+
+@keyframes reviewAnim {
+        0% {
+                color: black;
+        }
+
+        10% {
+                color: rgba(0, 0, 0, 0.2)
+        }
+
+        25% {
+                color: orangered
+        }
+
+        50% {
+                color: rgb(241, 136, 44)
+        }
+
+        75% {
+                color: rgb(148, 87, 34)
+        }
+
+        100% {
+                color: black;
+        }
+}
+
+@keyframes aboutAnim {
+        0% {
+                color: rgb(0, 0, 0);
+        }
+
+        50% {
+                color: rgb(226, 159, 35);
+                animation-direction: reverse;
+        }
+
+        100% {
+                color: black;
+        }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap');
+
+.halloween {
+        position: relative;
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        background-color: #542f63;
+        overflow: hidden;
+}
+
+.dracula {
+        position: relative;
+        cursor: pointer;
+        top: -50px;
+}
+
+.head {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: black;
+        box-shadow: inset 20px -20px #c7c2e0;
+        z-index: 3;
+}
+
+.head:before,
+.head:after {
+        content: "";
+        position: absolute;
+        background-color: #c7c2e0;
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+}
+
+.head:before {
+        left: -55px;
+}
+
+.head:after {
+        left: 45px;
+}
+
+.sides {
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: -20px;
+        top: -20px;
+        box-shadow: 90px 0px black;
+        z-index: 3;
+}
+
+.sides:before {
+        content: "";
+        position: absolute;
+        background-color: black;
+        width: 35px;
+        height: 5px;
+        top: 90px;
+        left: 50px;
+}
+
+.sides:after {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 20px;
+        background-color: #f11828;
+        top: 95px;
+        left: 78px;
+        border-radius: 0 0 10px 10px;
+        animation: drip 3s linear infinite;
+}
+
+@keyframes drip {
+        0% {
+                height: 20px;
+        }
+
+        10% {
+                height: 20px;
+        }
+
+        30% {
+                height: 30px;
+        }
+
+        50% {
+                height: 25px;
+        }
+
+        70% {
+                height: 20px;
+        }
+
+        85% {
+                height: 10px;
+        }
+
+        100% {
+                height: 20px;
+        }
+}
+
+.teeth,
+.teeth:before {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-bottom: 10px solid transparent;
+}
+
+.teeth {
+        border-right: 10px solid black;
+        top: 73px;
+        left: 30px;
+        z-index: 4;
+}
+
+.teeth:before {
+        content: "";
+        border-left: 10px solid black;
+        left: 25px;
+}
+
+.eyes {
+        position: absolute;
+        border-radius: 50%;
+        width: 33px;
+        height: 33px;
+        background-color: white;
+        top: 32px;
+        left: 18.5px;
+        z-index: 2;
+        box-shadow: 30px 0 white;
+}
+
+.eyes:before,
+.eyes:after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+}
+
+.eyes:before {
+        background-color: #ed439d;
+        width: 25px;
+        height: 25px;
+        top: 5px;
+        left: 7px;
+        box-shadow: 25px 0 #ed439d;
+}
+
+.eyes:after {
+        background-color: #7d203a;
+        width: 15px;
+        height: 15px;
+        top: 10px;
+        left: 13px;
+        box-shadow: 24px 0 #7d203a;
+}
+
+.eyelids {
+        position: absolute;
+        background-color: black;
+        width: 25px;
+        height: 10px;
+        border-radius: 100px 100px 0 0;
+        top: 30px;
+        left: 27px;
+        transform: rotate(20deg);
+        z-index: 4;
+}
+
+.eyelids:before {
+        content: "";
+        position: absolute;
+        background-color: black;
+        width: 25px;
+        height: 10px;
+        border-radius: 100px 100px 0 0;
+        transform: rotate(-40deg);
+        left: 20px;
+        top: -7px;
+}
+
+.ears {
+        position: absolute;
+        background-color: #9e8dc3;
+        width: 50px;
+        height: 25px;
+        border-radius: 0 0 100px 100px;
+        top: 40px;
+        left: -30px;
+        transform: rotate(40deg);
+        z-index: 2;
+}
+
+.ears:before {
+        content: "";
+        position: absolute;
+        background-color: #9e8dc3;
+        width: 50px;
+        height: 25px;
+        border-radius: 0 0 100px 100px;
+        transform: rotate(-80deg);
+        left: 83px;
+        top: -70px;
+}
+
+.collar {
+        position: absolute;
+        background-color: black;
+        width: 150px;
+        height: 75px;
+        border-radius: 0 0 100px 100px;
+        top: 55px;
+        left: -25px;
+        z-index: 1;
+}
+
+.collar:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-right: 20px solid transparent;
+        border-left: 20px solid transparent;
+        border-top: 30px solid #1a0e36;
+        left: 55px;
+        top: 40px;
+}
+
+.collar:before {
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 0;
+        border-right: 25px solid transparent;
+        border-left: 25px solid transparent;
+        border-bottom: 180px solid black;
+        top: 30px;
+        left: 10px;
+}
+
+.arms {
+        position: absolute;
+        width: 100px;
+        height: 0;
+        border-right: 25px solid transparent;
+        border-left: 25px solid transparent;
+        border-bottom: 155px solid #1a0e36;
+        left: -25px;
+        transition: .2s;
+}
+
+.dracula:hover .arms {
+        transform: scaleX(2);
+}
+
+.text {
+        position: absolute;
+        z-index: 5;
+        text-align: center;
+        font-family: 'Freckle Face', cursive;
+        font-size: 50px;
+        color: #f11828;
+        top: 120px;
+        left: -50px;
+        opacity: 0;
+        transition: .2s;
+}
+
+.dracula:hover .text {
+        opacity: 1;
+}
